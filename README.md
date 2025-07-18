@@ -1,10 +1,21 @@
 Loan Charge Exercise Code 
 
-*Prerequisites Enable Person Accounts in the destination org after reviewing the disclaimers T
-he distribution already includes an Account Record Type and layout 
+*Prerequisites 
+1. Enable Person Accounts from Setup->Personal Accounts. Follow the prompts to create a new Record Type and assign it to the desired Account layouts and then re-try the readiness check.
+2. Enable Custom Address Fields in Setup->User Interface
 
-Enable Custom Addresses in Setup->User Interface
+To deploy the distribution from VSCode, set the default org to the deployment destination and run:
+sf project deploy start
 
+Optional post-deployment steps within the org are:
+1. In the desired profiles, enable the new custom tab 'Loans'
+2. Add the custom tab to any required apps
+3. Add CRUD permission for the Loans and Loan Type objects to the desired permission sets and consider which profiles should have FLS access
+
+Assummptions made in the implementation:
+1. To have an Admin Fee processed before and Interest Charge where they naturally fall on the same day, it is assumed that the Interest Charge can be moved to the next day
+2. It is assumed there is only one Interest Charge per day
+3. It is assumed that there will be no non-Release charges later than a month after the Release Charge, which is only being extended by 1 month.
 
 # Salesforce DX Project: Next Steps
 
