@@ -1,10 +1,11 @@
 Loan Charge Exercise Code 
 
 *Prerequisites 
-1. Enable Person Accounts from Setup->Personal Accounts. Follow the prompts to create a new Record Type and assign it to the desired Account layouts and then re-try the readiness check.
+1. Enable Person Accounts from Setup->Person Accounts. Follow the prompts to create a new Record Type and assign it to the desired Account layouts and then re-try the readiness check.
 2. Enable Custom Address Fields in Setup->User Interface
 
 To deploy the distribution from VSCode, set the default org to the deployment destination and run:
+
 sf project deploy start
 
 Optional post-deployment steps within the org are:
