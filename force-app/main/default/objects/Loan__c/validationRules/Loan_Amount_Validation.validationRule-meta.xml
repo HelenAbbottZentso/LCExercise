@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loan_Amount_Validation</fullName>
+    <active>true</active>
+    <description>Validate Loan Amount</description>
+    <errorConditionFormula>Gross_Loan_Amount__c &lt;= 0</errorConditionFormula>
+    <errorMessage>Loan amount must be a positive value</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Security_Address__c</fullName>
+    <description>Physical address of asset securing the loan</description>
+    <inlineHelpText>Geographical address</inlineHelpText>
+    <label>Security Address</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Address</type>
+</CustomField>
