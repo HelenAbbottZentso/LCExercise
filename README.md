@@ -1,3 +1,11 @@
+Loan Charge Exercise Code 
+
+*Prerequisites Enable Person Accounts in the destination org after reviewing the disclaimers T
+he distribution already includes an Account Record Type and layout 
+
+Enable Custom Addresses in Setup->User Interface
+
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
